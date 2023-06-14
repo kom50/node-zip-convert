@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+
+    <div>
+        <form action="/upload" method="POST" encType="multipart/form-data">
+            <input type="file" name="file" accept="txt" id="file" multiple>
+            <input type="text" name="file_name">
+            <button>Get compressed file</button>
+        </form>
+    </div>
+</body>
+
+</html>
